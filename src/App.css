@@ -152,15 +152,50 @@ img{
   gap:1.5rem;
 }
 
-/* Breakpoints */
-/* For Large devices */
-@media screen and(max-width:992px){
+/* Buttons */
+.button{
+  display: inline-block;
+  background-color: var(--title-color);
+  columns: var(--continer-color);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover{
+  background-color: var(--title-color-dark);
 
 }
 
-/* For medium devices */
-@media screen and(max-width:768px){
+.button__icon{
+  margin-left: var(--mb-0-5);
+}
 
+.button--flex{
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Breakpoints */
+/* For Large devices */
+@media screen and (max-width:992px){
+.container{
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+}
+
+/* For medium devices */
+@media screen and (max-width:768px){
+
+}
+
+/* For small devices */
+@media screen and (max-width:350) {
+  .container{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 }
 
 
