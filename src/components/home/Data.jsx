@@ -56,7 +56,7 @@ const Data = () => {
         </svg>
       </h1>
 
-      <h3 className="home_subtitle">Data Scientist</h3>
+      <h3 className="home__subtitle">Data Scientist</h3>
       <p className="home__description">
         I am a data scientist with a passion for storytelling. I believe that{" "}
         <strong>
