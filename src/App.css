@@ -26,7 +26,9 @@
 --continer-color:#fff;
 
   /* Font and Typography */
---body-font:"Poppins",sans-serif;
+/* --body-font:"Poppins",sans-serif; */
+--body-font:'Source Code Pro', monospace;
+
 
 /* 0.5rem = 8px | 1em = 16px */
 --big-font-size:3.5rem;
@@ -132,14 +134,14 @@ img{
   color: var(--title-color);
 }
 
-.section_subtitle{
+.section__subtitle{
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 4rem;
 }
 
 .section__title,
-.section_subtitle{
+.section__subtitle{
   text-align: center;
 }
 
@@ -179,8 +181,9 @@ img{
   align-items: center;
 }
 
-/* Breakpoints */
-/* For Large devices */
+
+/* === BREAKPOINT FOR MEDIUM DEVICES ===*/
+
 @media screen and (max-width:992px){
 .container{
   margin-left: var(--mb-1-5);
@@ -197,14 +200,23 @@ img{
 
 }
 
-/* For medium devices */
+
 @media screen and (max-width:768px){
+  body{
+    margin: 0 0 var(--header-height) 0;
+  }
 .section{
   padding: 2rem 0 4rem;
 }
+
+.section__subtitle{
+  margin-bottom: var(--mb-3);
+}
 }
 
-/* For small devices */
+
+/* === BREAKPOINT FOR SMALL DEVICES ===*/
+
 @media screen and (max-width:350) {
   :root {
     --big-font-size:2.25rem;

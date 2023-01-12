@@ -1,0 +1,95 @@
+.experience__container{
+    display:  grid;
+    grid-template-columns: repeat(2, 400px);
+    gap: 1rem;
+    margin-bottom: var(--mb-2);
+    justify-content: center;
+    /* gap:  2rem; */
+}
+
+.experience__container > div {
+    background:#fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition:0.5s;
+}
+
+.experience__container > div:hover{
+    background: transparent;
+    border:3.5px solid #fff;
+    cursor:default;
+}
+
+.experience__container > div h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2e2e2e;
+}
+
+.experince__content{
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+
+.experience__backend{
+    padding: 10px;
+}
+
+
+.experience__detail{
+    display: flex;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.experience__details-icon{
+    margin-top: 6px;
+    color:#2e2e2e;
+}
+
+
+/* === BREAKPOINT FOR MEDIUM DEVICES ===*/
+
+@media screen and (max-width: 1024px){
+    .experience__container{
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container >div{
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+}
+
+/* === BREAKPOINT FOR SMALL DEVICES MAX-WIDTH : 600PX ===*/
+    
+@media screen and (max-width:600px){
+    .experience__container{
+        gap: 1rem;
+        margin: 10px;
+        grid-template-columns: 1fr ;
+    }
+
+    .experience__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
+
+/* === BREAKPOINT FOR SMALL DEVICES MAX-WIDTH : 350PX ===*/
+    
+@media screen and (max-width:350px){
+
+    .experience__container > div {
+        width: 300px;
+    }
+
+    .experience__detail{
+        display:grid;
+        
+    }
+
+}
